@@ -8,11 +8,14 @@
 <body>
     <script>
         let num = prompt("Digite um número:");
-        if (num % 2 === 0) {
-            alert("Par");
-        } else {
-            alert("Ímpar");
+        let resultado = "";
+        
+        for (let i = 1; i <= num; i++) {
+            if (i % 2 !== 0) {
+                resultado += i + " ";
+            }
         }
+        alert("Números ímpares: " + resultado);
     </script>
 </body>
 </html>

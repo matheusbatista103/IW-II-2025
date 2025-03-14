@@ -7,12 +7,12 @@
 </head>
 <body>
     <script>
-        let num = prompt("Digite um número:");
-        if (num % 2 === 0) {
-            alert("Par");
-        } else {
-            alert("Ímpar");
+        let fatorial = prompt("Digite um número:");
+        let resultado = 1;
+        for (let i = fatorial; i > 0; i--) {
+            resultado *= i;
         }
-    </script>
+        alert("Fatorial: " + resultado);
+    </script>    
 </body>
 </html>

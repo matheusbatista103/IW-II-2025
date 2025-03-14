@@ -7,12 +7,13 @@
 </head>
 <body>
     <script>
-        let num = prompt("Digite um número:");
-        if (num % 2 === 0) {
-            alert("Par");
-        } else {
-            alert("Ímpar");
+        let total = 0, numPositivo;
+        while (true) {
+            numPositivo = prompt("Digite um número:");
+            if (numPositivo < 0) break;
+            total += parseInt(numPositivo);
         }
+        alert("Soma: " + total);
     </script>
 </body>
 </html>
