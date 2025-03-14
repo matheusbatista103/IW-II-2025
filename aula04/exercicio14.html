@@ -10,15 +10,15 @@
         let valor = prompt("Digite o valor para saque:");
         let notas = [100, 50, 20, 10, 5, 2, 1];
         let resultado = "";
-        
         for (let i = 0; i < notas.length; i++) {
-            if (valor >= notas[i]) {
-                let qtd = Math.floor(valor / notas[i]);
-                valor -= qtd * notas[i];
+            let qtd = parseInt(valor / notas[i]);
+            if (qtd > 0) {
                 resultado += qtd + " nota(s) de " + notas[i] + "\n";
+                valor = valor - qtd * notas[i];
             }
         }
         alert(resultado);
     </script>
+      
 </body>
 </html>
