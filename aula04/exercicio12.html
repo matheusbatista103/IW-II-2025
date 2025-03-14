@@ -9,13 +9,16 @@
     <script>
         let nota;
 
-        do {
-        nota = parseFloat(prompt("Digite uma nota de 0 a 10:"));
-        if (nota < 0 || nota > 10){
-            alert("Por favor, insira uma nota válida entre 0 e 10.");
-        }
-        } while (nota < 0 || nota > 10);
+        while (true) {
+          nota = prompt("Digite uma nota de 0 a 10:");
+          nota = parseFloat(nota);
+          if (nota >= 0 && nota <= 10) {
+                break;
+          } else {
+                alert("Por favor, insira uma nota válida entre 0 e 10.");
+              }
+            }
         alert("Nota válida: " + nota);
-    </script>
+        </script>
 </body>
 </html>
