@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 14</title>
+  <script>
+    function trocarImagem(imagem) { // alterei a function pois nao soube fazer diferente
+      if (imagem.src.includes("figura2.jpg")) {
+        imagem.src = "figura1.jpg";
+      } else {
+        imagem.src = "figura2.jpg";
+      }
+    }
+  </script>
+</head>
+<body>
+  Clique na imagem para trocá-la: <br><br>
+  <img src="figura2.jpg" onclick="trocarImagem(this)" width="300" height="300"><br><br>
+</body>
+</html>
