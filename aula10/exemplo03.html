@@ -7,22 +7,21 @@
 <body>
 
   <input type="text" id="texto" placeholder="Digite algo aqui">
-  <button id="botao">Mostrar Alerta</button>
+  <button id="botao" onclick="valor()">Mostrar Alerta</button>
 
   <script>
     const input = document.getElementById('texto');
     const botao = document.getElementById('botao');
     let valorAnterior = input.value;
 
-    botao.addEventListener('click', function() {
+    function valor(){
       if (input.value !== valorAnterior) {
         alert(input.value);
         valorAnterior = input.value;
       } else {
         console.log('Valor não alterado, não exibindo alerta.');
       }
-    });
-
+    }
   </script>
 
 </body>
